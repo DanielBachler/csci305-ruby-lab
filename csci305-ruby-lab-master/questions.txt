@@ -1,0 +1,41 @@
+Dan Bachler
+CSCI-305
+
+10. After a couple of normal words, most titles enter an endless loop, from simple words.  Also for 'hey' the title is just 'hey' repeated 20 times.  I think that
+is because 'hey' is the word that most often follows 'hey'
+
+14. Many titles devolve into repeating patterns, since the bigram shows a cyclical pairing of words in some cases.  For example, 'you' is most often followed by 'are'
+and 'are' is most often followed by 'you'.  This leads to the pattern you can see where it repeats the same words over and over again.
+
+15. Yes, most titles enter an endless loop, but 'terminate' does not.  The title I get for 'terminate' is: 'terminate citta nuova ossessione'.  My guess as to why
+is the non-english words are rare due to removing most of the non-english titles from the data set
+
+16. To fix the repeating phrase problem, I added an elsif clause to my create_title method.  Under the part where it checks if nil was returned as the new word, the elsif
+checks to see if the given non-nil word is already in the title.  It achieves this through a title.scan which returns an array containing the regex matches to the given
+regular expression.  The regular expression is dynamic and changes with the new word, if a match is found the current title is returned as is.
+
+17. 2 titles, 'Montana sacra nova scotia' and 'Montana sacra nova baby I love you are'
+
+18. 'Bob marley me down road blues night long way you are'
+
+19. 'bob marley song you are'
+'bob marley purt drive me down road blues night long way you are'
+'bob marley is my heart'
+'bob marley vs world is my heart'
+'bob marley medley 1 2 b flat major op 11 bagatelles solo tu amor de la vida es el'
+The titles differ thanks to the slight randomness of the title creation.  If a word has a tie between its highest value options the returned value is randomly selected.
+
+20. 'tropical chicks dig it up your love you are'
+
+21.  For the most part, things just work the way I think they should.  Many libraries exist for almost anything I want to do, and Atom is a great file editor.
+
+22.  I strongly dislike the random bugs that appeared in my code, despite my and your best efforts to fix them.  I am not sure if that is ruby's fault or some
+weird external error, but it made my experience worse anyway.
+
+23.  The lab was challenging, but once I got it to work it was very satisfying.  Solving the various problems that came with the lab was a good way to discover
+the power and flexibility or ruby.
+
+24. I spent in total probably about 12 hours or more on the lab.  Without the 2 strange bugs I needed your help with it probably would have been more like 8.
+
+25.  Yes, I have already used it for a personal project.  I wrote a web-crawler that finds my bitcoin miner stats online and notifies me if it has gone down
+for more than five minutes.

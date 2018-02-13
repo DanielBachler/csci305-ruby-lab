@@ -1,0 +1,5 @@
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Finished in 0.0762 seconds (files took 12.18 seconds to load)
+[32m4 examples, 0 failures[0m
+
